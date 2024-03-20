@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    padding: 0.825rem;
+    padding: 0.225rem;
+    background-color: #FEF4D0;
 }
 
 .logo-container {
@@ -22,9 +23,9 @@
 
 .logo-container img {
     max-width: 100%;
-    width: 100%;
+    width: 75px;
     max-height: 100%;
-    height: 100%;
+    height: 75px;
     object-fit: contain;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.css';
-import MyImage from './images/fox.svg';
+import myImage from './fox.svg';
 
 const NavigationBar = () => {
     // logic
@@ -8,7 +8,7 @@ const NavigationBar = () => {
         <div className='navbar-container'>
             {/* Navbar */}  
             <div className='logo-container'>
-                <img src={MyImage} alt='logo'/>
+                <img src={myImage} alt='logo'/>
             </div>
             <div className='nav-list'>
                 <ul>
