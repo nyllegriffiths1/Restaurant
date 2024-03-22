@@ -8,6 +8,7 @@ import dishesImage from './dishes.svg';
 import sidesImage from './sides.svg';
 import baabuImage from './baabu.svg';
 import dessertImage from './dessert.svg';
+import spaghettiImage from './spaghetti.jpg';
 
 const HeroSection = () => {
     // logic
@@ -26,8 +27,18 @@ const HeroSection = () => {
             </div>
             <div className='right-container'>
                 <div className='image-container'>
-                    <img />
+                    <img src={spaghettiImage} />
                 </div>
+                <h1 className='grand-title'>G
+                    <br />
+                    R
+                    <br />
+                    A
+                    <br />
+                    N
+                    <br />
+                    D
+                </h1>
                 <ul>
                     <li><span><img src={drinksImage} alt='drinks'/></span>Drinks</li>
                     <li><span className='burger'><img src={dishesImage} alt='dishes'/></span>Dishes</li>
