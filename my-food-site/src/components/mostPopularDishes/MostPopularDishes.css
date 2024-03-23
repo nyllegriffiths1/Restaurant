@@ -9,14 +9,23 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 1.2rem;
+    margin: 3.2rem 0;
     max-width: 100%;
     width: 100%;
     height: 400px;
+}
+
+.most-popular-dishes h2 {
+    margin: 1.2rem 0;
+}
+
+.most-popular-dishes p {
+    margin: 0.625rem 0;
 }
 
 .dish-cards-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
