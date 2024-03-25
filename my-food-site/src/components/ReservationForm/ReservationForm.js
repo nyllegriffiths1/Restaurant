@@ -14,11 +14,32 @@ const ReservationForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    try {
+      const response = await fetch('/backend/api/reservations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Handle successful reservation
+        console.log('Reservation submitted successfully');
+        // You can add additional logic here, such as clearing the form or displaying a success message
+      } else {
+        // Handle error
+        console.error('Error submitting reservation');
+      }
+    } catch (err) {
+      console.error('Error submitting reservation:', err);
+    }
   };
+
+
 
   return (
     <div className="reservation-container">
